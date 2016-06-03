@@ -1,0 +1,6 @@
+server.js
+-couldn't "get" from controler
+-found through console
+-corrected raed to read
+
+everything works, no errors

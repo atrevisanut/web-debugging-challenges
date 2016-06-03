@@ -1,10 +1,10 @@
 angular.module("miniRouting", ['ui.router'])
 
-.config(function($stateProvider){
+.config(function($stateProvider, $urlRouterProvider){
 
     $stateProvider
         .state('home', {
-            url: '/',
+            url: '/homepage',
             templateUrl: 'js/home/homeTemplate.html',
             controller: 'homeCtrl'
         })
@@ -17,7 +17,7 @@ angular.module("miniRouting", ['ui.router'])
             url: '/products/:productid',
             templateUrl: 'js/products/productTemplate.html',
             controller: 'productsCtrl'
-        })
-    
-    
+        });
+
+
 })

@@ -3,8 +3,8 @@ var Schema = mongoose.Schema;
 var birdSchema = require('./BirdSchema')
 
 var sightingSchema = new Schema({
-  user: { type: Schema.Types.ObjectId, ref: 'User'},
-  bird: [birdSchema],
+  user: { type: String},
+  bird: {type:String},
   confirmed: { type: Boolean, default: false },
   numberSeen: { type: Number, min: 1 }
 });

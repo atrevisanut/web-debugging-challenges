@@ -1,0 +1,43 @@
+-APP.JS
+-"ui-router" was the error
+-found it in app.js, console said a dependency wasn't loading correctly
+-Fixed the error by changing it to "ui.router"
+
+APP.JS
+-Missing a dependency "$urlRouterProvider"
+-console said dependencies weren't loading
+- added in $urlRouterProvider to the dependencies
+
+APP.JS
+-There was an extra }) at line 14
+-found it when I was adding the dependency
+-fixed by removal
+
+APP.JS
+-all of the states were incorrect
+-found it when I fixed the dependency and console still had an error
+-was formatted like: .state('home') {} changed it to .state('home', {}
+
+App.js
+-controller for settings was incorrect
+-it said settingsCtrl
+-changed to settingsCtrl
+
+index.html
+-ui-view was incorrect
+-dependecies wouldn't load so changed it
+-changed to <ui-view></ui-view>
+
+index.html
+-script tag for ui-router wrong
+-dependencies wouldn't connect
+-added missing > onto start of script tag
+
+index.html
+-ng-app was missing an =
+-added an =
+
+productCtrl.js
+-didn't have service or state injected
+-found when things wouldn't connect
+- added $state and productService
